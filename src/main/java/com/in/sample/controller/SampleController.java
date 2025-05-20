@@ -15,6 +15,7 @@ public class SampleController {
     SampleService sampleService;
     @GetMapping("/getInfo")
     public String getSampleMessage(){
+        System.out.print("Test");
         return sampleService.getSampleMessage();
     }
 }
